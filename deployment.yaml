@@ -30,9 +30,6 @@ spec:
           name: privnet-sidechain-did-node-hostpath1
       volumes:
       - name: privnet-sidechain-did-node-hostpath0
-        hostPath:
-          path: /home/rahulguna2/Documents/.volumes/elastos-privnet/did-node
+        emptyDir: {}
       - name: privnet-sidechain-did-node-hostpath1
-        hostPath:
-          path: /home/rahulguna2/Documents/elastos-privnet/blockchain/ela-sidechain/did/did-node/config.json
-        
+        emptyDir: {}
